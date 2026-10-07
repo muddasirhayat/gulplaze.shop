@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none">
+  <g transform="translate(8,8)">
+    <circle cx="24" cy="28" r="7" fill="#A8C3A0"/>
+    <circle cx="16" cy="18" r="7" fill="#F4C7C3"/>
+    <circle cx="32" cy="18" r="7" fill="#CFE3F1"/>
+    <circle cx="16" cy="34" r="7" fill="#CFE3F1"/>
+    <circle cx="32" cy="34" r="7" fill="#A8C3A0"/>
+    <circle cx="24" cy="24" r="5" fill="#F2836B"/>
+  </g>
+  <text x="64" y="42" font-family="Georgia, serif" font-size="32" fill="#2B2B2B">gulplaze</text>
+</svg>

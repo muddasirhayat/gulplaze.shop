@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fff9f3;
+  --surface: #ffffff;
+  --primary: #a8c3a0;
+  --blush: #f4c7c3;
+  --sky: #cfe3f1;
+  --text: #2b2b2b;
+  --muted: #6b6b6b;
+  --cta: #f2836b;
+  --success: #6fae7b;
+  --error: #d9534f;
+  --radius: 18px;
+  --shadow: 0 8px 30px rgba(43, 43, 43, 0.06);
+  --font-heading: var(--font-fraunces), serif;
+  --font-body: var(--font-nunito), sans-serif;
+  --font-urdu: var(--font-nastaliq), serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-primary: var(--primary);
+  --color-blush: var(--blush);
+  --color-sky: var(--sky);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-cta: var(--cta);
+  --color-success: var(--success);
+  --color-error: var(--error);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
+  --radius-card: var(--radius);
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-urdu), var(--font-body), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-body), sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-serif {
+  font-family: var(--font-heading), serif;
+}
+
+.container-gp {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.section-pad {
+  padding-block: 2.75rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-block: 5rem;
+  }
+}
+
+.card-shadow {
+  box-shadow: var(--shadow);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.6s ease both;
+}
